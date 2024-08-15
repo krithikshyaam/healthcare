@@ -513,14 +513,14 @@ menu li a:hover{
     background-color: #4a8a70;
 }
 .why-choose-box i{
-    width: 35px;
-    height: 35px;
+    width: 200px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #25503f;
-    margin-right: 10px;
+    margin-right: 25px;
     color:#ffffff;
 }
 .why-choose-box-text{
@@ -584,7 +584,8 @@ menu li a:hover{
 #team{
     max-width: 1200px;
     width: 90%;
-    margin: 80px auto;
+    margin: 150px auto;
+    height: 450px;
 }
 .team-heading{
     display: flex;
@@ -613,8 +614,8 @@ menu li a:hover{
 }
 .team-img{
     background-color: #f5f7fb;
-    padding: 10px 10px 0px 10px;
-    height: 300px;
+    padding: 10px 10px 10px 10px;
+    height: 350px;
     display: flex;
     align-items: flex-end;
 }
@@ -629,7 +630,7 @@ menu li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 1px;
     margin-top: 10px;
     text-align: center;
 }
@@ -647,7 +648,7 @@ menu li a:hover{
 /*==testimonials======================*/
 #testimonials{
     background-color: #f5f7fb;
-    padding: 50px;
+    padding: 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -748,6 +749,12 @@ menu li a:hover{
     letter-spacing: 0.3px;
     margin-top: 30px;
 }
+.swiper-pagination-testimonial{
+    position: absolute;
+    text-align: center;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
 /*==subscribe===========*/
 #subscribe{
     max-width: 1000px;
@@ -790,8 +797,10 @@ menu li a:hover{
 .subscribe-box button{
     background-color: #122853;
     color: #ffffff;
-    border-radius: 4px;
+    border-radius: 10px;
     max-width: 120px;
+    height:40px;
+    margin-top: -1px;
     width: 100%;
     border: none;
     outline: none;
@@ -1096,4 +1105,62 @@ footer{
     .story-number-container{
         grid-template-columns: 1fr;
     }
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000; /* Ensure it appears above other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 2% auto; /* Reduced margin-top to make it appear higher */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;  /* Adjust the width */
+    max-width: 400px;  /* Set a maximum width */
+    height: auto;  /* Let the height adjust based on content */
+    max-height: 90%;  /* Set a maximum height */
+    overflow-y: auto;  /* Add vertical scroll if content overflows */
+    z-index: 1001; /* Ensure the content is above the modal background */
+    font-size: 0.5em; /* Reduce font size to half of the original */
+}
+
+/* Close Button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 1.4em; /* Keep the close button a bit larger for accessibility */
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.3em; /* Ensure labels are readable with the reduced font size */
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1em; /* Ensure input fields have readable font size */
 }

@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Title===============================================-->
-    <title>Ohms care</title>
+    <title>Ohm Hospital</title>
     
     <!--CSS====================================================-->
     <link rel="stylesheet" href="CSS/style.css">
@@ -34,10 +34,10 @@
             <span class="nav-icon"></span>
         </label>
         <!--logo-->
-        <a href="#" class="logo"><span>Ohm</span>Care</a>
+        <a href="#" class="logo"><span>Ohm</span>Hospital</a>
         <!--menu-->
         <ul class="menu">
-            <li><a href="#team">FIND A DOCTOR</a></li>
+            <li><a href="#team">Find a Doctor</a></li>
             <li><a href="#our-services">Our services</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
         </ul>
@@ -51,14 +51,14 @@
         <!--**text**-->
         <div class="hero-text">
             <h1>Feel Better About Finding Healthcare</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laudantium nihil </p>
+            <p>Health: The Hug Your Body Deserves</p>
             <!--btns-->
             <div class="hero-text-btns">
                 <a href="#">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     Find Doctor
                 </a>
-                <a href="#">
+                <a href="#popupForm">
                     <i class="fa-solid fa-check"></i>
                     Book Appointment
                 </a>
@@ -70,7 +70,43 @@
         </div>
     </div>
 
-    </section><!--hero end-->
+    <!-- Popup Form Modal -->
+<div id="popupForm" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Book Your Appointment</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="Dr. Sura Pushpalatha">Dr. Sura Pushpalatha</option>
+                <option value="Dr. Rithish">Dr. Rithish</option>
+                <option value="Dr. Arun Halanka">Dr. Arun Halanka</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<form action="save_form_data.php" method="POST"></form>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="popup.js"></script>
+
+     </section><!--hero end-->
     <div class="appointment-search-btn">
         <h3>Find best Healthcare</h3>
         <!--**search-==========-->
@@ -103,7 +139,7 @@
          <!--text-->
          <div class="w-info-text">
             <strong>Specalised Service</strong>
-            <p>Lorem ipsum dollar sit</p>
+            <p>Premium Health, Exceptional Care</p>
          </div>
     </div>
          <!--box2-->
@@ -117,7 +153,7 @@
                <strong>24/7 Advanced care
 
                </strong>
-               <p>Lorem ipsum dollar sit</p>
+               <p>Quick Care for Every Emergency</p>
             </div>
        </div>
        <!--box3-->
@@ -129,7 +165,7 @@
         <!--text-->
         <div class="w-info-text">
            <strong>Get Result Online</strong>
-           <p>Lorem ipsum dollar sit</p>
+           <p>Get your digital results today</p>
         </div>
    </div>
           
@@ -151,8 +187,8 @@
         <div class="our-story-text">
            
             <h2 >Short Story About Our Clinic</h2> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias ipsum dolores alias deserunt quaerat dolor sequi eum tenetur. Quibusdam sed blanditiis at obcaecati molestias hic ex temporibus rerum dolorum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sit enim recusandae dolore corporis eligendi quam vero dolores iste fugiat deserunt qui quia</p>
+            <p>Welcome to our new website. We encourage you to find out more about the values and vision that guides us, the services and programs we offer, the indicators that ensure our continued accountability and transparency, and the news and events that matter most to you. It is the place where you will find information on career opportunities with HMH and be able to access general healthcare information to keep you well informed.</p>
+            <p>Ohm Hospital has a proud tradition of care. For Last so many years, Ohm Hospital has cared for the people of Tamilnadu, surrounding communities, and beyond, being a significant player. We offer healthcare not only to our community residents but to the many visitors who frequent our beautiful area year round.</p>
         <!--happy clients number-->
         <div class="story-number-container">
             <!--Box1-->
@@ -202,11 +238,12 @@
                 <!--box-->
                 <div class="service-box s-box1">
                     <!--icon-->
-                    <i class="fa-solid fa-tooth"></i>
+                    <i class="fa-solid fa-heart-pulse"></i>
                     <!--title-->
-                    <strong>Dental Care</strong>
+                    <strong>Cardiology Care</strong>
                     <!--Details-->
-                    <p>Dental care is essential for maintaining healthy teeth and gums.</p>
+                    <p>
+                        Comprehensive cardiology care, offering advanced diagnostics, personalized treatments, and dedicated support for heart health, ensuring patient-centered excellence.</p>
                     <!--btn-->
                     <a href="#">Read More</a>
                 </div>
@@ -215,11 +252,11 @@
                 <!--box-->
                 <div class="service-box s-box2">
                     <!--icon-->
-                    <i class="fa-solid fa-tooth"></i>
+                    <i class="fa-solid fa-truck-medical"></i>
                     <!--title-->
-                    <strong>Dental Care</strong>
+                    <strong>Critical Care</strong>
                     <!--Details-->
-                    <p>Dental care is essential for maintaining healthy teeth and gums.</p>
+                    <p>Critical care is medical care for people who have life-threatening injuries and illnesses. It usually takes place in an intensive care unit (ICU). A team of trained health care providers gives you 24-hour care.</p>
                     <!--btn-->
                     <a href="#">Read More</a>
                 </div>
@@ -228,11 +265,11 @@
                 <!--box-->
                 <div class="service-box s-box3">
                     <!--icon-->
-                    <i class="fa-solid fa-tooth"></i>
+                    <i class="fa-solid fa-children"></i>
                     <!--title-->
-                    <strong>Dental Care</strong>
+                    <strong>IVF & Infertility Test</strong>
                     <!--Details-->
-                    <p>Dental care is essential for maintaining healthy teeth and gums.</p>
+                    <p>IVF (In Vitro Fertilization) is a specialized infertility treatment that involves fertilizing an egg outside the body, offering hope for couples struggling to conceive naturally. Effective, safe, and personalized care.</p>
                     <!--btn-->
                     <a href="#">Read More</a>
                 </div>
@@ -245,7 +282,7 @@
                     <!--title-->
                     <strong>Dental Care</strong>
                     <!--Details-->
-                    <p>Dental care is essential for maintaining healthy teeth and gums.</p>
+                    <p>Proper dental care is essential for overall health. Our hospital provides comprehensive dental services, from routine cleanings to advanced procedures, ensuring your smile remains healthy and vibrant. Visit us today!</p>
                     <!--btn-->
                     <a href="#">Read More</a>
                 </div>
@@ -270,8 +307,8 @@
             <!--icon-->
             <i class="fa-solid fa-check"></i>
             <div class="why-choose-box-text">
-                <strong>Advance Care</strong>
-                <p>Access to care </p>
+                <strong>Choose Us For</strong>
+                <p>Choose us for exceptional healthcare because we combine cutting-edge technology with compassionate care. Our experienced medical team is dedicated to your well-being, offering personalized treatment in a state-of-the-art facility. Your health is our priority.</p>
 
             </div>  
         </div>
@@ -281,7 +318,7 @@
             <i class="fa-solid fa-check"></i>
             <div class="why-choose-box-text">
                 <strong>Advance Care</strong>
-                <p>Access to care </p>
+                <p>Experience advanced care at our hospital, where innovation meets excellence. We offer the latest medical treatments and technologies, ensuring precise diagnoses and effective therapies. Trust us for comprehensive, patient-centered care that prioritizes your well-being.</p>
 
             </div>  
         </div>
@@ -290,8 +327,8 @@
             <!--icon-->
             <i class="fa-solid fa-check"></i>
             <div class="why-choose-box-text">
-                <strong>Advance Care</strong>
-                <p>Access to care </p>
+                <strong>Emergency</strong>
+                <p>We have highly experienced and qualified personnel to manage our emergency assistance services 24 hours a day, 365 days a year. We have a 24 hours Command and Control Center manned by Doctors to provide advice and assistance to those in need.</p>
 
             </div>  
         </div>
@@ -300,14 +337,14 @@
             <!--icon-->
             <i class="fa-solid fa-check"></i>
             <div class="why-choose-box-text">
-                <strong>Advance Care</strong>
-                <p>Access to care </p>
+                <strong>Perioperative Care</strong>
+                <p>The goal is to provide better conditions for patients before operation, during operation, and after operation. Patient expectations and concerns are practically addressed. Quality assurance endeavors is also integrated into these perioperative phases so that optimal care of the surgical patient is ensured.</p>
 
             </div>  
         </div>
     </div><!--container end-->
     <!--btn-->
-    <a href="#" class="why-choose-us-btn">Make Appointment</a>
+    
 </div>
 <!--Right-->
 <div class="why-choose-us-right">
@@ -364,8 +401,8 @@
                     </div>
                     <!--text-->
                     <div class="team-text">
-                        <strong>Dr. Paradox Alex</strong>
-                        <span>Skin Specalist</span>
+                        <strong>Dr. Devi Prasad Shetty</strong>
+                        <span>Cardiologist</span>
                     </div>
                 </div>
             </div><!--slide-end-->
@@ -379,8 +416,8 @@
                     </div>
                     <!--text-->
                     <div class="team-text">
-                        <strong>Dr. Paradox Alex</strong>
-                        <span>Skin Specalist</span>
+                        <strong>Dr. Arun Halanka</strong>
+                        <span>Nephrologist</span>
                     </div>
                 </div>
             </div><!--slide-end-->
@@ -394,8 +431,8 @@
                     </div>
                     <!--text-->
                     <div class="team-text">
-                        <strong>Dr. Paradox Alex</strong>
-                        <span>Skin Specalist</span>
+                        <strong>Dr. Rajesh Mistry</strong>
+                        <span>Oncologist</span>
                     </div>
                 </div>
             </div><!--slide-end-->
@@ -409,8 +446,8 @@
                     </div>
                     <!--text-->
                     <div class="team-text">
-                        <strong>Dr. Paradox Alex</strong>
-                        <span>Skin Specalist</span>
+                        <strong>Dr. Pooja Aggarwal</strong>
+                        <span>Dermatologist</span>
                     </div>
                 </div>
             </div><!--slide-end-->
@@ -424,8 +461,8 @@
                     </div>
                     <!--text-->
                     <div class="team-text">
-                        <strong>Dr. Paradox Alex</strong>
-                        <span>Skin Specalist</span>
+                        <strong>Dr. Sura Pushpalatha</strong>
+                        <span>Obstetrician</span>
                     </div>
                 </div>
             </div><!--slide-end-->
@@ -478,8 +515,8 @@
                     </div>
                     <!--text-->
                     <div class="t-profile-text">
-                        <strong>Client Name</strong>
-                        <span>From China</span>
+                        <strong>Geetha</strong>
+                        <span>“Competent doctors and caring staff. My father, aged 89 was cared for so well by the nurses who ran the extra mile in motivating my father and helping him heal faster. Room facilities and services were timely and responsive.”</span>
                         <!--rating-->
                         <div class="t-rating">
                             <i class="fa-solid fa-star"></i>
@@ -492,7 +529,7 @@
                 </div><!--profile-end-->
 
                 <!--feedback-->
-                <p>Immediate Recovery</p>
+                
 
 
                 
@@ -511,8 +548,9 @@
                         </div>
                         <!--text-->
                         <div class="t-profile-text">
-                            <strong>Client Name</strong>
-                            <span>From China</span>
+                            <strong>Rithish</strong>
+                            <span>“It was a great opportunity to meet an amazing personality Dr Arul Urologist at Ohm Hospital. Life is all about meeting good people. I felt happy and blessed to interact with him, though for few minutes but gave a lot of insight to living quality life, apart of my Medical Consultation with him.
+                                My prayers to God to Bless him and his family. Kauvery Hospital is gifted to have such rare personalities with them.”</span>
                             <!--rating-->
                             <div class="t-rating">
                                 <i class="fa-solid fa-star"></i>
@@ -525,7 +563,7 @@
                     </div><!--profile-end-->
     
                     <!--feedback-->
-                    <p>Immediate Recovery2</p>
+                    
     
     
                     
@@ -544,8 +582,10 @@
                         </div>
                         <!--text-->
                         <div class="t-profile-text">
-                            <strong>Client Name</strong>
-                            <span>From China</span>
+                            <strong>Sasikumar</strong>
+                            <span>	
+                                “Excellent service by the staffs. Friendly and cheerful nurses and ward managers. Doctors are very friendly and well experienced and gave good treatment for this serious condition and discharged us in two days.
+                                Housekeeping and security staffs did an excellent work. Our best wishes and congratulations to Ohm Hospital. Thank you all for the wonderful service.”</span>
                             <!--rating-->
                             <div class="t-rating">
                                 <i class="fa-solid fa-star"></i>
@@ -558,7 +598,7 @@
                     </div><!--profile-end-->
     
                     <!--feedback-->
-                    <p>Immediate Recovery3</p>
+                    
     
     
                     
@@ -566,7 +606,7 @@
                 </div><!--slide-end-->
 
             </div><!--wrapper-end-->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination-testimonial"></div>
             </div><!--==swiper-end-->       
             
             
@@ -579,7 +619,7 @@
     <!--==Subscribe==================-->
     <section id="subscribe">
 
-        <h3>Subscribe For New Updates From Wecare</h3>
+        <h3>Subscribe For New Updates From Ohm Hospital</h3>
         <!--subscribe-box========-->
         <form class="subscribe-box">
             <input type="email" placeholder="abc@gmail.com">
@@ -595,11 +635,12 @@
             <!--**company-box*********-->
             <div class="footer-company-box">
                 <!--logo-->
-                <a href="#" class="logo"><span>We</span>Care</a>
+                <a href="#" class="logo"><span>Ohm</span>Hospital</a>
                 <!--details-->
-                <p>aaaaaaaaaaaaaaaaaaaaaaaa 
-                    bbbbbbbbbbbbbbbbbbbb nnnnnnnnnnnnnn hhhhhhhhhhhh
-                </p>
+                <p>Ohm Hospital And Research Centre</p>
+                <p>Tho Jedarpalayam</p>
+                <p>Namagiripettai, Namakkal</p>
+                <p>Tamil Nadu, 637406</p>
                 <!--social-box-->
                 <div class="footer-social">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -611,7 +652,7 @@
 
             <!--**link******************-->
             <div class="footer-link-box">
-                <strong>Main Link's</strong>
+                <strong>Useful Links</strong>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -622,34 +663,36 @@
             </div>
             <!--**link******************-->
             <div class="footer-link-box">
-                <strong>Main Link's</strong>
+                <strong>Hospital Services</strong>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Emergency Services/Casualty</a></li>
+                    <li><a href="#">Master Health Checkup</a></li>
+                    <li><a href="#">Diagnostic Services</a></li>
+                    <li><a href="#">Blood Bank</a></li>
+                    <li><a href="#">Rehabilitation Services</a></li>
                 </ul>
             </div>
             <!--**link******************-->
             <div class="footer-link-box">
-                <strong>Main Link's</strong>
+                <strong>Patients & Visitors</strong>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Appointments</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Amenities</a></li>
+                    <li><a href="#">Saftey</a></li>
                 </ul>
             </div>
         </div><!--container-end-->
 
         <!--**bottom****************-->
         <div class="footer-bottom">
-            <span>Made By Going To Internet</span>
-            <span>Copyright 2024 - Going To Internet</span>
+            <span>Made By Krithik Shyaam O G</span>
+            <span>Copyright 2024 - Krithik Shyaam O G</span>
         </div>
     </footer>
+
+    
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <!-- Initialize Swiper -->
@@ -704,10 +747,29 @@
     });
     /*==testimonials==============*/
     var swiper = new Swiper(".mySwipertesti", {
+        slidesPerView: 1,
+        spaceBetween: 10,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination-testimonial",
+        clickable: true,
+      },
+      breakpoints: {
+        /*and after 560px width slide is 1*/
+        560: {/*==after 950px width slide is 2*/
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        950: {/*==after 1250px width slide is 3*/
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        1250: {/*==before 1250px width slide is 4*/
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
       },
     });
+
 </script>
 </body>
 </html>
